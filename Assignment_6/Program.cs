@@ -2,26 +2,26 @@
 {
     internal class Program
     {
-        //public struct DeliveryAddress
-        //{
-        //    public string City;
-        //    public string Street;
-        //    public int BuildingNumber;
+        public struct DeliveryAddress
+        {
+            public string City;
+            public string Street;
+            public int BuildingNumber;
 
-        //    public DeliveryAddress(string city, string street, int buildingNumber)
-        //    {
-        //        City = city;
-        //        Street = street;
-        //        BuildingNumber = buildingNumber;
-        //    }
+            public DeliveryAddress(string city, string street, int buildingNumber)
+            {
+                City = city;
+                Street = street;
+                BuildingNumber = buildingNumber;
+            }
 
-        //    public string GetFullAddress()
-        //    {
-        //        return $"{BuildingNumber} {Street}, {City}";
-        //    }
-        //}
+            public string GetFullAddress()
+            {
+                return $"{BuildingNumber} {Street}, {City}";
+            }
+        }
 
-        #region Ceate a Shipment struct
+        #region Ceate a Shipment struct Part2
         //public struct Shipment
         //{
         //    private string trackingCode;
@@ -37,6 +37,11 @@
         //        this.weight = weight > 0 ? weight : 1.0;
         //        this.deliveryFee = deliveryFee > 0 ? deliveryFee : 10.0m;
         //        Destination = destination;
+        //    }
+
+        //    public Shipment(string trackingCode)
+        //    : this(trackingCode, "Unknown", 1.0, 50.0m, new DeliveryAddress("Default City", "Default St", 1))
+        //    {
         //    }
 
         //    public string TrackingCode
@@ -94,6 +99,24 @@
         //        {
         //            return deliveryFee + ((decimal)weight * 5m);
         //        }
+        //    }
+
+        //    public void UpdateDeliveryFee(decimal newFee)
+        //    {
+        //        if (newFee > 0)
+        //        {
+        //            deliveryFee = newFee;
+        //        }
+        //    }
+        //    public void PrintShipment()
+        //    {
+        //        Console.WriteLine($"Tracking Code: {TrackingCode}");
+        //        Console.WriteLine($"Description: {Description}");
+        //        Console.WriteLine($"Weight: {Weight}");
+        //        Console.WriteLine($"Delivery Fee: {DeliveryFee}");
+        //        Console.WriteLine($"Destination: {Destination.GetFullAddress()}");
+        //        Console.WriteLine($"Estimated Cost: {EstimatedCost}");
+        //        Console.WriteLine(new string('-', 30));
         //    }
         //}
         #endregion
