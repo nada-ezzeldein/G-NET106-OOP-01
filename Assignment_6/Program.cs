@@ -2,6 +2,24 @@
 {
     internal class Program
     {
+       // public struct DeliveryAddress
+        // {
+        //    public string City;
+        //    public string Street;
+        //    public int BuildingNumber;
+
+        //    public DeliveryAddress(string city, string street, int buildingNumber)
+        //    {
+        //        City = city;
+        //        Street = street;
+        //        BuildingNumber = buildingNumber;
+        //    }
+
+        //    public string GetFullAddress()
+        //    {
+        //        return $"{BuildingNumber} {Street}, {City}";
+        //    }
+        //}
         static void Main(string[] args)
         {
             #region Question 1
@@ -25,6 +43,17 @@
             // fliexibility and read only properties for internal values
             #endregion
 
+
+            #region Part 2 Question 1
+            //DeliveryAddress originalAddress = new DeliveryAddress("Cairo", "El-Tahrir St", 6);
+            //DeliveryAddress copiedAddress = originalAddress;
+
+            //copiedAddress.City = "El-Fayoum";
+            //copiedAddress.BuildingNumber = 18;
+
+            //Console.WriteLine($"Original Address: {originalAddress.GetFullAddress()}");
+            //Console.WriteLine($"Copied Address: {copiedAddress.GetFullAddress()}");
+            #endregion
 
         }
     }
